@@ -1,0 +1,36 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@bazel/bazel": "latest",
+    "@bazel/ibazel": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/typescript": "latest",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "lerna": "^3.16.4",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-babel-minify": "^9.0.0",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-npm": "^2.0.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "build": "lerna exec --parallel -- rollup -c --config \\$LERNA_ROOT_PATH/rollup.config.js",
+    "publish-pkgs": "lerna publish --canary --no-git-reset --no-push --no-verify-access"
+  }
+}

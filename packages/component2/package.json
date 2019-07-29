@@ -1,0 +1,17 @@
+{
+  "name": "@myorg/component2",
+  "version": "0.1.0",
+  "description": "",
+  "main": "js/Component2.tsx",
+  "files": [
+    "js/*.*",
+    "index.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "@myorg/component1": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}

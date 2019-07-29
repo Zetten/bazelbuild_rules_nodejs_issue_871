@@ -1,0 +1,23 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@npm_bazel_typescript//:index.bzl", "ts_library")
+load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
+
+ts_library(
+    name = "component1_ts",
+    srcs = ["js/Component1.tsx"],
+    module_name = "@myorg/component1",
+    module_root = "js/Component1.tsx",
+    deps = [
+        "@npm//react"
+    ]
+)
+
+npm_package(
+    name = "@myorg/component1",
+    srcs = [
+        "index.js",
+        "package.json",
+    ],
+    deps = [":component1_ts"],
+)

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "node_modules",
+        "packages"
+      ]
+    },
+    "allowJs": false,
+    "sourceMap": true,
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
