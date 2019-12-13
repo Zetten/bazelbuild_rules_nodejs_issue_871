@@ -9,15 +9,14 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@bazel/bazel": "latest",
-    "@bazel/ibazel": "latest",
-    "@bazel/buildifier": "latest",
-    "@bazel/typescript": "latest",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@bazel/bazel": "^1.2.0",
+    "@bazel/ibazel": "^0.10.3",
+    "@bazel/typescript": "^0.42.3",
     "lerna": "^3.16.4",
     "rollup": "^1.17.0",
     "rollup-plugin-babel": "^4.3.3",
